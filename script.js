@@ -29,6 +29,11 @@ const checkWin = ()=>{
         if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[0]].innerText !== "")){
             document.querySelector('.info').innerText = boxtext[e[0]].innerText +  "   won";
             isgameover = true;
+            gameOver.play();
+
+             setTimeout(() => {
+                alert(`${turn} lose the game`)
+            }, 500);
             // document.querySelector('.line').style.transform = `translate(${e[3]}vw ,${e[4]}vw) rotate(${e[5]}deg)`;
         }
     })
@@ -47,6 +52,9 @@ Array.from(boxes).forEach(element=>{
             checkWin();
             if(!isgameover){
                 document.getElementsByClassName('info')[0].innerText = 'turn for   ' + turn;
+            }
+            else {
+                document.querySelector('.container').style.cursor = 'not-allowed';
             }
         }
     })
