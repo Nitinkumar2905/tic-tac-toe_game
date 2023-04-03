@@ -8,34 +8,27 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="gameContainer bg-gray-200 mt-32 p-12 flex justify-center space-x-48">
+    <div class="gameContainer bg-gray-200 mt-32 p-12 flex flex-col md:flex-row items-center md:items-start justify-center space-y-8 md:space-y-0 md:space-x-48">
         <div class="left container grid w-fit">
-            <div class="box border-r-2 border-b-2 text-center text-[4vw] text-gray-500 border-black" id="box1"><span class="boxText">x/o</span></div>
-            <div class="box border-b-2 text-center text-[4vw] text-gray-500 border-black" id="box2"><span class="boxText">x/o</span></div>
-            <div class="box border-l-2 border-b-2 text-center text-[4vw] text-gray-500 border-black" id="box3"><span class="boxText">x/o</span></div>
-            <div class="box border-r-2 border-b-2 text-center text-[4vw] text-gray-500 border-black" id="box4"><span class="boxText">x/o</span></div>
-            <div class="box border-b-2 text-center text-[4vw] text-gray-500 border-black" id="box5"><span class="boxText">x/o</span></div>
-            <div class="box border-b-2 border-l-2 text-center text-[4vw] text-gray-500 border-black" id="box6"><span class="boxText">x/o</span></div>
-            <div class="box border-r-2 border-b-0 text-center text-[4vw] text-gray-500 border-black" id="box7"><span class="boxText">x/o</span></div>
-            <div class="box text-center text-[4vw] text-gray-500 border-black" id="box8"><span class="boxText">x/o</span></div>
-            <div class="box border-l-2 border-b-0 text-center text-[4vw] text-gray-500 border-black" id="box9"><span class="boxText">x/o</span></div>
+            <div class="box hover:bg-gray-300 cursor-pointer items-center  border-r-2 border-b-2 text-center text-[4vw] text-gray-500 border-black" id="box1"><span class="text-center boxtext"></span></div>
+            <div class="box hover:bg-gray-300 cursor-pointer items-center  border-b-2 text-center text-[4vw] text-gray-500 border-black" id="box2"><span class="text-center boxtext"></span></div>
+            <div class="box hover:bg-gray-300 cursor-pointer items-center  border-l-2 border-b-2 text-center text-[4vw] text-gray-500 border-black" id="box3"><span class="text-center boxtext"></span></div>
+            <div class="box hover:bg-gray-300 cursor-pointer items-center  border-r-2 border-b-2 text-center text-[4vw] text-gray-500 border-black" id="box4"><span class="text-center boxtext"></span></div>
+            <div class="box hover:bg-gray-300 cursor-pointer items-center  border-b-2 text-center text-[4vw] text-gray-500 border-black" id="box5"><span class="text-center boxtext"></span></div>
+            <div class="box hover:bg-gray-300 cursor-pointer items-center  border-b-2 border-l-2 text-center text-[4vw] text-gray-500 border-black" id="box6"><span class="text-center boxtext"></span></div>
+            <div class="box hover:bg-gray-300 cursor-pointer items-center  border-r-2 border-b-0 text-center text-[4vw] text-gray-500 border-black" id="box7"><span class="text-center boxtext"></span></div>
+            <div class="box hover:bg-gray-300 cursor-pointer text-center text-[4vw] text-gray-500 border-black" id="box8"><span class="text-center boxtext"></span></div>
+            <div class="box hover:bg-gray-300 cursor-pointer items-center border-l-2 border-b-0 text-center text-[4vw] text-gray-500 border-black" id="box9"><span class="text-center boxtext"></span></div>
         </div>
 
-        <div class="right gameInfo space-y-6 font-semibold font-serif">
+        <div class="right gameInfo space-y-4 font-semibold font-serif w-[80%] md:pt-12 flex flex-col items-center justify-center md:w-fit">
             <h1 class="text-2xl">Let's Play</h1>
             <div class="flex space-x-4 text-xl">
-                <span>Info</span>
+                <span class="info">turn for x</span>
                 <button type="reset" id="reset">Reset</button>
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
     <script type="module" src="./script.js"></script>
 </body>
 </html>
