@@ -68,5 +68,5 @@ reset.addEventListener('click', ()=>{
     turn = 'X';
     isgameover = false;
     document.getElementsByClassName('info')[0].innerText = 'turn for ' + turn;
-
+    
 })
